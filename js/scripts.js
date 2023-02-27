@@ -8,7 +8,8 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
+    const year = new Date().getFullYear();
+    document.getElementById('cr').innerHTML = `<small>Copyright © Derek Lee ${year}</small>`
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
